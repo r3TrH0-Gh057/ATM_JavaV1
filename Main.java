@@ -76,7 +76,7 @@ public class Main {
                     if (money_in > 0) {
                         money += money_in;
                         System.out.println(GREEN + "You have added successfully. Your amount is: $" + money + RESET);
-                        transaction_history.add(GREEN + "You added to your account -$" + money_in + RESET);
+                        transaction_history.add(GREEN + "You added to your account + $" + money_in + RESET);
                     } else {
                         System.out.println("Try with another number");
                     }
@@ -87,7 +87,7 @@ public class Main {
                     if (amount > 0 && amount <= money) {
                         money -= amount;
                         System.out.println(GREEN + "You have withdrawn successfully. Your amount is: $" + money + RESET);
-                        transaction_history.add(GREEN + "Withdraw -$" + amount + RESET);
+                        transaction_history.add(GREEN + "Withdraw - $" + amount + RESET);
                     } else {
                         System.out.println(RED + "Invalid amount. Try again with another amount" + RESET);
                     }
@@ -100,7 +100,7 @@ public class Main {
                         int account_Number = scanner.nextInt();
                         money -= deposit;
                         System.out.println(GREEN + "You have deposited successfully. Your money is: $" + money + RESET);
-                        transaction_history.add(GREEN + "Deposit -$" + deposit + RESET);
+                        transaction_history.add(GREEN + "Deposit - $" + deposit + RESET);
                     } else {
                         System.out.println(RED + "Invalid amount or you don't have enough money. Please try again." + RESET);
                     }
